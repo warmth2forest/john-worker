@@ -15,7 +15,11 @@ import {
 	Collapse, 
 	Timeline,
 	Tree,
-	Form
+	Form,
+	Popconfirm,
+	Dropdown,
+	Menu,
+	Divider
 } from 'vue-antd-ui'
 
 const install = (Vue) => {
@@ -39,7 +43,13 @@ const install = (Vue) => {
 	Vue.component(Timeline.name, Timeline)
 	Vue.component(Timeline.Item.name, Timeline.Item)
 	Vue.component(Tree.name, Tree)
-	Vue.component(Form.FormItem.name, Form.FormItem.name)
+	Vue.component(Form.Item.name, Form.Item)
+	Vue.component(Popconfirm.name, Popconfirm)
+	Vue.component(Dropdown.name, Dropdown)
+	Vue.component(Dropdown.Button.name, Dropdown.Button)
+	Vue.component(Menu.name, Menu)
+	Vue.component(Menu.Item.name, Menu.Item)
+	Vue.component(Divider.name, Divider)
 	Vue.prototype.$confirm = Modal.confirm
 	Vue.prototype.$message = message
 }
