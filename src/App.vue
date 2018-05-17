@@ -23,4 +23,8 @@ export default {
 	display: block;
 	margin-bottom: 8px
 }
+.project-item .project-item-tool-bar .project-function-tab .tab .ant-tabs-nav-wrap {
+	text-align: center;
+	line-height: 28px;
+}
 </style>

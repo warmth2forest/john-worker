@@ -19,7 +19,8 @@ import {
 	Popconfirm,
 	Dropdown,
 	Menu,
-	Divider
+	Divider,
+	Breadcrumb
 } from 'vue-antd-ui'
 
 const install = (Vue) => {
@@ -53,6 +54,8 @@ const install = (Vue) => {
 	Vue.component(Menu.name, Menu)
 	Vue.component(Menu.Item.name, Menu.Item)
 	Vue.component(Divider.name, Divider)
+	Vue.component(Breadcrumb.name, Breadcrumb)
+	Vue.component(Breadcrumb.Item.name, Breadcrumb.Item)
 	Vue.prototype.$confirm = Modal.confirm
 	Vue.prototype.$message = message
 }

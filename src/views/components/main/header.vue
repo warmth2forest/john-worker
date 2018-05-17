@@ -104,7 +104,7 @@ export default {
 	.main-header .main-header-select {
 		width: 33%;
 		margin: auto;
-		padding: 0 13% 0 3%;
+		padding: 0 13% 0 50px;
 	}
 	.main-header .main-header-select .projects-select {
 		width: 100%;

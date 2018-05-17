@@ -9,14 +9,25 @@ export default new Router({
     {
       path: '/',
       name: 'main',
+      redirect: '/projects',
       component: Main,
       children: [
         {
         	path: 'projects',
         	name: 'main_projects',
         	component: resolve => require(['@/views/main-pages/Projects.vue'],resolve) 
+        },
+        {
+          path: 'project/:project_id',
+          name: 'main_project_item',
+          component: resolve => require(['@/views/main-pages/ProjectItem.vue'],resolve) 
         }
       ]
+    },
+    {
+      path: '/project',
+      redirect: '/projects',
+      component: Main
     }
   ]
 })
