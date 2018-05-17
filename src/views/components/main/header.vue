@@ -60,6 +60,7 @@ export default {
   	position: fixed;
   	top: 0;
   	z-index: 9;
+  	background: #fff;
 	}
 	.main-header .main-header-select,.main-header-logo,.main-header-me {
 		width: 33%;
@@ -103,11 +104,11 @@ export default {
 	.main-header .main-header-select {
 		width: 33%;
 		margin: auto;
-		padding: 0 11% 0 3%;
+		padding: 0 13% 0 3%;
 	}
 	.main-header .main-header-select .projects-select {
 		width: 100%;
-		height: 51px;
+		height: 50px;
     padding-top: 9px;
 	}
 	.main-header .main-header-logo {

@@ -25,7 +25,9 @@ import {
 const install = (Vue) => {
 	Vue.component(Button.name, Button)
 	Vue.component(Card.name, Card)
+	Vue.component(Card.Meta.name, Card.Meta)
 	Vue.component(Input.name, Input)
+	Vue.component(Input.TextArea.name, Input.TextArea)
 	Vue.component(Input.Search.name, Input.Search)
 	Vue.component(Icon.name, Icon)
 	Vue.component(Avatar.name, Avatar)
@@ -43,6 +45,7 @@ const install = (Vue) => {
 	Vue.component(Timeline.name, Timeline)
 	Vue.component(Timeline.Item.name, Timeline.Item)
 	Vue.component(Tree.name, Tree)
+	Vue.component(Form.name, Form)
 	Vue.component(Form.Item.name, Form.Item)
 	Vue.component(Popconfirm.name, Popconfirm)
 	Vue.component(Dropdown.name, Dropdown)

@@ -8,8 +8,15 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Main',
-      component: Main
+      name: 'main',
+      component: Main,
+      children: [
+        {
+        	path: 'projects',
+        	name: 'main_projects',
+        	component: resolve => require(['@/views/main-pages/Projects.vue'],resolve) 
+        }
+      ]
     }
   ]
 })
